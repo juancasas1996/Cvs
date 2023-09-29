@@ -2,18 +2,18 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Pinecone
 import pinecone
 
-# Api keys from pinecone and openai
-PINECONE_API_KEY ="dabe371f-52da-49c6-ba8e-cdcbdc664b5c"
-OPEN_AI_KEY ="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"
+# # Api keys from pinecone and openai
+# PINECONE_API_KEY ="dabe371f-52da-49c6-ba8e-cdcbdc664b5c"
+# OPEN_AI_KEY ="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"
 
-def create_embeddings():
+def create_embeddings(OPEN_AI_KEY):
 
     # Initialize OpenAI embeddings using the provided API key from environment variables
     embeddings = OpenAIEmbeddings(openai_api_key=OPEN_AI_KEY)
     
     return embeddings
 
-def save_embeddings(embeddings, texts):
+def save_embeddings(embeddings, texts, PINECONE_API_KEY):
     # initialize pinecone
     pinecone.init(
         api_key=PINECONE_API_KEY,  

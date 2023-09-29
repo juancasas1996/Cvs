@@ -29,3 +29,10 @@ query = st.text_input('','what are the skills of Sebastian Casas')
 docs = extract_info_pdf()
 texts = chunk_data(docs=docs)
 
+embeddings = create_embeddings(OpenAI_Key)
+docsearch = save_embeddings(embeddings, texts, Pinecone_Key)
+chain = initialize_OpenAI(OpenAI_Key)
+
+answer = questions(docsearch, chain, query)
+
+fmarkdown(5, "#6495ED", answer)
