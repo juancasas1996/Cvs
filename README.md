@@ -1,3 +1,3 @@
-# Cvs
+# Cv
 
-![Screen Shot 2023-09-29 at 7 35 35 PM](https://github.com/juancasas1996/Cvs/assets/67381908/e2f47981-77f0-4bbf-b832-ef6d4ade6779)
+![Screen Shot 2023-09-29 at 7 36 44 PM](https://github.com/juancasas1996/Cvs/assets/67381908/41bfc811-fef1-430d-b262-06285d4077bd)
