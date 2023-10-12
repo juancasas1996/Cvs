@@ -4,7 +4,7 @@ import pinecone
 
 # # Api keys from pinecone and openai
 # PINECONE_API_KEY ="dabe371f-52da-49c6-ba8e-cdcbdc664b5c"
-# OPEN_AI_KEY ="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"
+# OPEN_AI_KEY ="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"
 
 def create_embeddings(OPEN_AI_KEY):
 
